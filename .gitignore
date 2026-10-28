@@ -1,0 +1,8 @@
+venv/
+.env
+chroma_store/
+__pycache__/
+*.pyc
+app/evaluation/results.json
+app/evaluation/history.jsonl
+.DS_Store

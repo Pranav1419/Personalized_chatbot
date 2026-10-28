@@ -1,0 +1,12 @@
+[
+  {"question": "How many PTO days and how many company holidays do full-time employees get?", "expected_page": 5, "answer_contains": ["20", "10"], "note": "two facts in one chunk"},
+  {"question": "What is the most a new full-time hire could receive in their first year from the home office stipend plus the training subsidy combined?", "expected_page": [4, 16], "answer_contains": [["3,500", "3500"]], "note": "two pages + arithmetic"},
+  {"question": "Which needs more advance notice: taking parental leave or voluntarily resigning, and how many days for each?", "expected_page": [9, 31], "answer_contains": ["60", "14"], "note": "two pages + comparison"},
+  {"question": "wats the max hotel cost per nite when travling for work", "expected_page": 7, "answer_contains": ["250"], "note": "typos and slang"},
+  {"question": "Can I use my personal phone to get into production systems?", "expected_page": 19, "answer_contains": [["mdm", "mobile device management"]], "note": "no keyword overlap; the doc says BYOD / consumer endpoints"},
+  {"question": "Is it okay to save a copy of a production database on my laptop?", "expected_page": 6, "answer_contains": [["never", "not allowed", "not permitted", "prohibit", "may not", "cannot", "can't", "must not"]], "note": "yes/no question; answer must be a clear no"},
+  {"question": "A client sent me a gift worth $80. Can I accept it?", "expected_page": 21, "answer_contains": [["50"], ["exceed", "cannot", "can't", "not allowed", "not permitted", "may not", "should not", "decline", "no,"]], "note": "scenario: apply a limit to a number"},
+  {"question": "I joined my current role 4 months ago. Can I apply for an internal job posting?", "expected_page": 45, "answer_contains": [["6", "six"]], "note": "scenario: compare 4 months to a 6-month rule"},
+  {"question": "How many sick days do employees get each year?", "expected_page": null, "answer_contains": [["don't know", "do not know", "not mention", "doesn't mention", "not specified", "no information"]], "note": "trap: sounds like PTO, but sick days are not in the document"},
+  {"question": "Which health insurance plan does Acme offer, and what is the monthly premium?", "expected_page": null, "answer_contains": [["don't know", "do not know", "not mention", "doesn't mention", "not specified", "no information"]], "note": "trap: page 36 has health benefits, but no insurance plan or premium"}
+]
